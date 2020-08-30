@@ -6,6 +6,7 @@ import "moment/locale/es";
 import { Navbar } from "components/ui/Navbar";
 import { messages } from "helpers/calendar-messages";
 import { CalendarEvent } from "./CalendarEvent";
+import { CalendarModal } from "./CalendarModal";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
@@ -70,6 +71,8 @@ export const CalendarScreen = () => {
         onView={onViewChange}
         view={lastView}
       />
+
+      <CalendarModal />
     </div>
   );
 };
